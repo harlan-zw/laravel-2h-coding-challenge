@@ -18,9 +18,7 @@ Route::get('/', function() {
     return 'hi :)';
 });
 
-Route::get('/', function() {
-    return 'hi :)';
-});
+Route::any('/calculate', [ \App\Http\Controllers\CalculateRateForCoachConnect::class, 'calc' ]);
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();

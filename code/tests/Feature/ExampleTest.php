@@ -2,7 +2,6 @@
 
 namespace Tests\Feature;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 class ExampleTest extends TestCase
@@ -12,10 +11,18 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    public function testBasicTest()
+    public function testCalc()
     {
-        $response = $this->get('/');
+        $response = $this->post('/calculate', [
+            'hours_worked_per_week' => 10,
+            'hourly_rate_cents_aud' => 100,
+        ]);
 
-        $response->assertStatus(200);
+        $response->assertJson([
+            'Weekly' => 1000,
+            'Fortnightly' => 1865,
+            'Monthly' => 3595,
+            'Yearly' => 45115,
+        ]);
     }
 }
