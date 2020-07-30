@@ -1,6 +1,6 @@
-### Not for the candidate
+## Marking
 
-__Things to look for__
+__Task 1 - Objective (6 points)__
 
 - delete the .env file from repo
 - add .env.example to git
@@ -11,4 +11,19 @@ __Things to look for__
 
 - Rename config/Myconfig.php to something better
 - Rename app/Http/Controllers/CalculateCoachConnect.php 
+
+__Task 1 - Subjective (4 points)__
+
+- Added a dev environment (docker, homestead, etc)
+- Added any type of CI
+- Added any phpcs tools
+- How well the documentation is
+- Other
+
+__Task 2 - Objective (10 points)__
+
+- Does it work?
+- Is there 90%+ test coverage?
+
+__Task 3 - Subjective (10 points)__
 
