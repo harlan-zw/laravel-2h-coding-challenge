@@ -1,5 +1,3 @@
-# Senior Laravel Test
-
 ## Background
 
 You have just started at a new company called CoachConnect, it's your first day and you have been given a project to work on called CoachIncomeCalculator. 
@@ -55,8 +53,8 @@ Notes:
 - Any other tax exceptions / deductions or additions should be ignored besides the base rates
 - The content of the email doesn't matter but it needs to include the hourly rate & the hours worked per week
 - Rates are based on a sole trader who isn't obliged to pay Superannuation
-- Annual Taxable Income = rate * hours_per_week * 52
-- Annual Tax on income = (taxable_income / 100 * 2) + fixed_tax_for_bracket + floor((taxable_income - tax_bracket_start) * tax_bracket_cents_per_dollar)
+- Formula fr Annual Taxable Income = rate * hours_per_week * 52
+- Formula for Annual Tax on income = (taxable_income / 100 * 2) + fixed_tax_for_bracket + floor((taxable_income - tax_bracket_start) * tax_bracket_cents_per_dollar)
 
 _Examples_
 
