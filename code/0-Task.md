@@ -30,11 +30,11 @@ Your manager understands the code for CSC may not be perfect and would like your
 control over what you change in the code base, it's now your baby and you need to nature it.
 
 While lots may be wrong, they suggest some things which may be useful to look at:
-- Implement Laravel / REST API best practices
-- Implement coding standards that may be missing
-- Add missing documentation
-- Write any missing tests
-- Implement any other best practices or development tools that would be useful
+- Laravel / REST API best practices
+- Coding standards
+- Documentation
+- Tests
+- Other best practices or development tools that would be useful
 
 They just ask you to please not break the `/calculate` endpoint.
 
