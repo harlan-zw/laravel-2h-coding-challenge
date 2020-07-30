@@ -1,6 +1,6 @@
 # Laravel 2h Coding Challenge
 
-The purpose of this project is to test potential Laravel hires for core competency with object and subjective measures.
+The purpose of this project is to test potential Laravel hires for core competency with objective and subjective measures.
 
 The test is intended to be 2 hours long which should be enough time given a senior capability. There are
  3 tasks we ask of them (outlined in `code/0-Task.md`):

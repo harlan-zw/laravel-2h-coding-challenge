@@ -1,10 +1,12 @@
 ## Background
 
-You have just started at a new company called CoachConnect, it's your first day and you have been given a project to work on called CoachIncomeCalculator. 
+Welcome to your new job at CoachConnect :) It's your first day and you have been given a project to work on called
+ CoachIncomeCalculator. 
 
 ### CoachConnect (CC)
 
-CoachConnect is a platform for coaches and their clients to connect. Clients will book in their coaches for paid bookings, charged at 30 minute increments. 
+CoachConnect is a platform for coaches and their clients to connect. Clients will book in their coaches for paid
+ bookings, charged at 30 minute increments. 
 
 CoachConnect takes a fixed % fee from all payments of 13.5% for every dollar earned after $1,000.
  
@@ -12,7 +14,8 @@ Tech: Laravel REST API with a Vue.js frontend.
 
 ### CoachIncomeCalculator (CSC)
 
-CoachIncomeCalculator, function is to provide data about a coaches earnings given how often they and how much they charge their clients. It takes into account the fixed % fee CoachConnect is charging.
+CoachIncomeCalculator, function is to provide data about a coaches earnings given how often they and how much they 
+charge their clients. It takes into account the fixed % fee CoachConnect is charging.
  
 Tech: Laravel Micro-service, receives REST API request from CC. Built by one of the companies former junior engineers
 
@@ -20,7 +23,8 @@ Currently CC is hitting the `/calculate` endpoint.
 
 ### Tasks
 
-As the new (and only) senior Laravel developer in the company, you have been tasked with 'rescuing' the CoachIncomeCalculator.
+As the new (and only) senior Laravel developer in the company, you have been tasked with 'rescuing' the
+ CoachIncomeCalculator.
 
 Lunch time is in 2 hours and you want go out for burger and a beer, so you need to finish everything before then.
 
@@ -46,7 +50,8 @@ Your endpoint should take the coach's hourly rate and the hours worked per week.
 they have to pay weekly, fortnightly, monthly and annually, similar to the `/calculate` endpoint.
 
 The calculation should be based on their Taxable income, which is income after the CoachConnect fee (13.5% fee after $1,000).
- See [Resident tax rates 2020-21](https://www.ato.gov.au/rates/individual-income-tax-rates/) for the rates to apply to taxable income. 
+ See [Resident tax rates 2020-21](https://www.ato.gov.au/rates/individual-income-tax-rates/) for the rates to apply to
+  taxable income. 
 
 If a coach has a taxable income less then the $18,200, then the team would like an email to go to `sales@coachconnect.com`.
 
