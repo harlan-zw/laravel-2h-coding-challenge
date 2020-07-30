@@ -27,7 +27,7 @@ Lunch time is in 2 hours and you want go out for burger and a beer, so you need 
 #### 1. Fix code and set standards
 
 Your manager understands the code for CSC may not be perfect and would like your expertise to fix it up. You have full
-control over what you change in the code base, it's now your baby and you need to nature it.
+control over what you change in the code base, it's now your baby and you need to nurture it.
 
 While lots may be wrong, they suggest some things which may be useful to look at:
 - Laravel / REST API best practices
@@ -36,13 +36,13 @@ While lots may be wrong, they suggest some things which may be useful to look at
 - Tests
 - Other best practices or development tools that would be useful
 
-They just ask you to please not break the `/calculate` endpoint.
+They just ask you to "please not break the `/calculate` endpoint".
 
 #### 2. Add /tax endpoint
 
 The team would like a new endpoint `/tax` to calculate how much tax the coach will need to pay on their income.
 
-Your endpoint should take the hourly rate of the coach, the hours worked per week. It needs to calculate how much tax 
+Your endpoint should take the coach's hourly rate and the hours worked per week. It needs to calculate how much tax 
 they have to pay weekly, fortnightly, monthly and annually, similar to the `/calculate` endpoint.
 
 The calculation should be based on their Taxable income, which is income after the CoachConnect fee (13.5% fee after $1,000).
