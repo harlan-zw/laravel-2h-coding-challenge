@@ -42,21 +42,25 @@ They just ask you to please not break the `/calculate` endpoint.
 
 The team would like a new endpoint `/tax` to calculate how much tax the coach will need to pay on their income.
 
-Your endpoint should take the hourly rate of the coach, the hours worked per week and an email. It needs to calculate 
-how much tax they have to pay weekly, fortnightly, monthly and annually
-The calculation should be based on [Resident tax rates 2020-21](https://www.ato.gov.au/rates/individual-income-tax-rates/)
+Your endpoint should take the hourly rate of the coach, the hours worked per week. It needs to calculate how much tax 
+they have to pay weekly, fortnightly, monthly and annually, similar to the `/calculate` endpoint.
+
+The calculation should be based on their Taxable income, which is income after the CoachConnect fee (13.5% fee after $1,000).
+ See [Resident tax rates 2020-21](https://www.ato.gov.au/rates/individual-income-tax-rates/) for the rates to apply to taxable income. 
 
 If a coach has a taxable income less then the $18,200, then the team would like an email to go to `sales@coachconnect.com`.
 
 Notes:
-- Should include a 2% medicare levy if within the taxable income range
+- Should include a 2% medicare levy on taxable income if within the taxable income range
 - Any other tax exceptions / deductions or additions should be ignored besides the base rates
 - The content of the email doesn't matter but it needs to include the hourly rate & the hours worked per week
 - Rates are based on a sole trader who isn't obliged to pay Superannuation
-- Formula fr Annual Taxable Income = rate * hours_per_week * 52
+- Formula fr Annual Taxable Income = min(rate * hours_per_week * 52, 1000) + min(0, (rate * hours_per_week * 52 * 0.865) - 1000)
 - Formula for Annual Tax on income = (taxable_income / 100 * 2) + fixed_tax_for_bracket + floor((taxable_income - tax_bracket_start) * tax_bracket_cents_per_dollar)
 
 _Examples_
+
+// @todo update examples for 13.5% fee
 
 a. Given an hourly rate of $300, working 10 hours a week, the income of the coach will be 300 x 10 x 52 = Taxable income: $156,000.
  
