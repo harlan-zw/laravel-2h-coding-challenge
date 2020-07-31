@@ -1,6 +1,6 @@
 ## Background
 
-Welcome to your new job at CoachConnect :) It's your first day and you have been given a project to work on called
+Welcome to your new job at CoachConnect! It's your first day and you have been given a project to work on called
  CoachIncomeCalculator. 
 
 ### CoachConnect (CC)
@@ -59,21 +59,19 @@ Notes:
 - Should include a 2% medicare levy on taxable income if within the taxable income range
 - Any other tax exceptions / deductions or additions should be ignored besides the base rates
 - The content of the email doesn't matter but it needs to include the hourly rate & the hours worked per week
-- Rates are based on a sole trader who isn't obliged to pay Superannuation
-- Formula fr Annual Taxable Income = min(rate * hours_per_week * 52, 1000) + min(0, (rate * hours_per_week * 52 * 0.865) - 1000)
-- Formula for Annual Tax on income = (taxable_income / 100 * 2) + fixed_tax_for_bracket + floor((taxable_income - tax_bracket_start) * tax_bracket_cents_per_dollar)
+- All numbers should be rounded, 0.50 should be rounded to 1
 
 _Examples_
 
-// @todo update examples for 13.5% fee
-
-a. Given an hourly rate of $300, working 10 hours a week, the income of the coach will be 300 x 10 x 52 = Taxable income: $156,000.
+a. Given an hourly rate of $300, working 10 hours a week, the annual revenue of the coach will be (300 x 10 x 52)
+$156,000, minus the CoachConnect fee (13.5% for every dollar after $1000) it's $135,075.
  
-Annual Tax on income = (156000 / 100 * 2 = 3120) + 20797 + floor((156000 - 90001 = 65999) * .37 = 24420) = $48,336
+Annual Tax on income = round(135075 / 100 * 2 = 2701.5) + 20797 + round((135075 - 90001 = 45074) * .37 = 16677.38) = $40,176
 
-a. Given an hourly rate of $150, working 40 hours a week, the income of the coach will be 150 x 40 x 52 = Taxable income: $312,000.
+a. Given an hourly rate of $150, working 40 hours a week, the income of the coach will be (150 x 40 x 52) $312,000,
+minus the CoachConnect fee (13.5% for every dollar after $1000) it's $270,015.
  
-Annual Tax on income = (312000 / 100 * 2 = 6240) + 54097 + floor((312000 - 180001 = 131999) * .45 = 59399.55) = $119,736
+Annual Tax on income = round(270015 / 100 * 2 = 5400.3) + 54097 + round((270015 - 180001 = 90014) * .45 = 40506.3) = $100,003
 
 
 ##### 

@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Facade\CalculationFacade;
+use App\helpers\ServiceCalculateIncome;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +25,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->app->bind(CalculationFacade::class, function () {
+            return ServiceCalculateIncome::class;
+        });
     }
 }

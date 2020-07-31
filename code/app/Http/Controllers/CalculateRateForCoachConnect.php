@@ -6,6 +6,8 @@
 namespace App\Http\Controllers;
 
 
+use App\Facade\CalculationFacade;
+
 class CalculateRateForCoachConnect extends \Illuminate\Routing\Controller {
 
     /**
@@ -17,33 +19,6 @@ class CalculateRateForCoachConnect extends \Illuminate\Routing\Controller {
         // r is rate
         $r = request()->get('hourly_rate_cents_aud');
 
-        // tr is total rate
-        $tr = $h * $r;
-
-        if ($tr > 1000) { $tr -= (($tr - 1000) / 100 *config('Myconfig.Coach_Conenct.FeeSetting')); }
-
-        // f is fortnightly
-        $f = $tr * 2;
-
-        if ($f > 1000) { $f -= (($f - 1000) / 100 *config('Myconfig.Coach_Conenct.FeeSetting')); }
-
-
-        // m is monthly
-        $m = $tr * 4;
-
-        if ($m > 1000) { $m -= (($m - 1000) / 100 *config('Myconfig.Coach_Conenct.FeeSetting')); }
-
-        // y is monthly
-        $y = $tr * 52;
-
-        if ($y > 1000) { $y -= (($y - 1000) / 100 *config('Myconfig.Coach_Conenct.FeeSetting')); }
-
-        // okay time to do math :P
-        return [
-            'Weekly' => $tr,
-            'Fortnightly' => $f,
-            'Monthly' => $m,
-            'Yearly' => $y,
-        ];
+        return CalculationFacade::calc($h, $r);
     }
 }

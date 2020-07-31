@@ -14,8 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function() {
+Route::any('/', function() {
     return 'hi :)';
+});
+
+Route::any('/test', function() {
+    return dd(request());
 });
 
 Route::any('/calculate', [ \App\Http\Controllers\CalculateRateForCoachConnect::class, 'calc' ]);

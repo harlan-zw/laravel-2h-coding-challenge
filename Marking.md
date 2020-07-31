@@ -8,9 +8,11 @@ __Task 1 - Objective (6 points)__
 - add composer.lock to git
 - add phpunit.xml.dist
 - update read me with setup instructions and background information
-
 - Rename config/Myconfig.php to something better
 - Rename app/Http/Controllers/CalculateCoachConnect.php 
+- Remove the test endpoint from `api.php`
+- Remove the '*' from `Exceptions\Handler.php`
+- They do something better with the Facade 
 
 __Task 1 - Subjective (4 points)__
 
