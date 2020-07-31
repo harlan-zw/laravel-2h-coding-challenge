@@ -17,7 +17,7 @@ class CalculateRateForCoachConnect extends \Illuminate\Routing\Controller {
         // h is hours
         $h = request()->get('hours_worked_per_week');
         // r is rate
-        $r = request()->get('hourly_rate_cents_aud');
+        $r = request()->get('hourly_rate');
 
         return CalculationFacade::calc($h, $r);
     }

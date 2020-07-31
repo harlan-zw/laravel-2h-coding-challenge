@@ -13,6 +13,12 @@ __Task 1 - Objective (6 points)__
 - Remove the test endpoint from `api.php`
 - Remove the '*' from `Exceptions\Handler.php`
 - They do something better with the Facade 
+- Removed my @author doc block
+- Cleaned up the logic in `/calculate`
+- Improved the testing of `/calculate`
+- Fixed config consistency
+
+Note: No points if they break the calculate endpoint
 
 __Task 1 - Subjective (4 points)__
 

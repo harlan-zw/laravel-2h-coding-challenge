@@ -15,7 +15,7 @@ class ExampleTest extends TestCase
     {
         $response = $this->post('/calculate', [
             'hours_worked_per_week' => 10,
-            'hourly_rate_cents_aud' => 100,
+            'hourly_rate' => 100,
         ]);
 
         $response->assertJson([

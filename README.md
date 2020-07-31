@@ -47,8 +47,14 @@ git init && \
 git add . && \
 git commit -m 'Initial commit' && \
 git remote add origin ${GIT_URL} && \
-git push origin master
+git push -u origin master
 ```
 
 Book in a time with the candidate and give them access at an agreed upon time. Any commits after the 2 hour mark should 
 be ignored (within reason).
+
+
+@todo
+
+- document more marking points that are missing
+- grammarly
