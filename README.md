@@ -40,7 +40,7 @@ You can find the questions in `Questions.md`.
 
 Create and push the code folder up in the candidates name
 ```bash
-export CANDIDATE_NAME=CHANGE_ME GIT_URL=CHANGE_ME; \
+export CANDIDATE_NAME=laravel-chriswyh GIT_URL=git@kintell-git:kintell_tech/laravel-chriswyh.git; \
 cp -r code ../${CANDIDATE_NAME} && \
 cd ../${CANDIDATE_NAME} && \
 git init && \
