@@ -14,10 +14,10 @@ Tech: Laravel REST API with a Vue.js frontend.
 
 ### CoachConnectFinance - CCF
 
-CoachConnectFinance provides financial data about a coach's earnings to CoachConnect. Currently it's only function
+CoachConnectFinance provides financial data about a coach's earnings to CoachConnect. Currently its only function
  is to calculate an estimated income for a coach.
  
-Tech: Laravel Micro-service, receives REST API request from CC. Built by one of the companies former junior engineers
+Tech: Laravel Micro-service, receives REST API request from CC. Built by one of the company's former junior engineers
 
 Currently, CC is hitting the `/calculate` endpoint. 
 
@@ -25,7 +25,7 @@ Currently, CC is hitting the `/calculate` endpoint.
 
 As the new (and only) senior Laravel developer in the company, you have been tasked with 'rescuing' CoachConnectFinance.
 
-Lunchtime is in 2 hours and you want to go out for a burger and a beer, so you need to finish everything before then.
+Lunchtime is in 2 hours and you want to go out for a burger and a beer, so you need to finish everything before then. (You have two tasks to achieve in two hours)
 
 #### 1. Fix code and set standards
 
@@ -33,6 +33,7 @@ Your manager understands the code for CCF may not be perfect and would like your
 control over what you change in the code base, it's now your baby and you need to nurture it.
 
 While lots may be wrong, they suggest some things which may be useful to look at:
+
 - Laravel / REST API best practices
 - Coding standards
 - Documentation
@@ -54,6 +55,7 @@ The calculation is on their Taxable income, which is income after the CoachConne
 If a coach has a taxable income less then the $18,200, then the team would like an email to go to `sales@coachconnect.com`.
 
 Notes:
+
 - Should include a 2% medicare levy on taxable income if within the taxable income range
 - Any other tax exceptions/deductions or additions should be ignored beside the base rates
 - The content of the email doesn't matter, however, it needs to include the hourly rate & the hours worked per week
@@ -62,28 +64,28 @@ Notes:
 
 _Examples_
 
-a. Given an hourly rate of $300, working 10 hours a week, the annual revenue of the coach will be (300 x 10 x 52)
-$156,000, minus the CoachConnect fee (13.5% for every dollar after $1000) it's $135,075.
+**Example A:** Given an hourly rate of $300, working 10 hours a week, the annual revenue of the coach will be ($300 x 10 x 52)
+$156,000, minus the CoachConnect fee (13.5% for every dollar after $1,000) it's $135,075.
  
- The coach is in the tax bracket _$90,001 – $180,000_, meaning they pay _$20,797 plus 37c for each $1 over $90,000_.                                 
+ The coach is in the tax bracket _$90,001 – $180,000_, meaning their tax will be _$20,797 plus 37c for each $1 over $90,000_.                                 
  
  | item | amount |
  | ---- | ----: |
- | medicare levy 2% | 135075 * 0.02 = 2702 |
- | fixed rate | 20797 |
- | variable rate | 45074 * .37 = $16,677 |
+ | medicare levy 2% | $135,075 * 0.02 = 2702 |
+ | fixed rate | $20,797 |
+ | variable rate | $45,074 * .37 = $16,677 |
  | total | $40,176 |
 
-b. Given an hourly rate of $150, working 40 hours a week, the income of the coach will be (150 x 40 x 52) $312,000,
-minus the CoachConnect fee (13.5% for every dollar after $1000) it's $270,015.
+**Example B:** Given an hourly rate of $150, working 40 hours a week, the income of the coach will be ($150 x 40 x 52) $312,000,
+minus the CoachConnect fee (13.5% for every dollar after $1,000) it's $270,015.
  
-The coach is in the tax bracket _$180,001 and over_, meaning they pay _$54,097 plus 45c for each $1 over $180,000_.                                 
+The coach is in the tax bracket _$180,001 and over_, meaning their tax will be _$54,097 plus 45c for each $1 over $180,000_.                                 
 
 | item | amount |
 | ---- | ----: |
-| medicare levy 2% | 270015 * 0.02 = 5400 |
-| fixed rate | 54097 |
-| variable rate | 90014 * .45 = $40,506 |
+| medicare levy 2% | $270,015 * 0.02 = $5,400 |
+| fixed rate | $54,097 |
+| variable rate | $90,014 * .45 = $40,506 |
 | total | $100,003 |
   
 
@@ -92,4 +94,3 @@ The coach is in the tax bracket _$180,001 and over_, meaning they pay _$54,097 p
 ## Post-lunch interview
 
 After lunch (the test) your manager would like to get you and the team (us) in a room to talk about the project.
-
