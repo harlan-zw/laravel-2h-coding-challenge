@@ -52,7 +52,7 @@ Your endpoint should take the coach's hourly rate (in dollars) and the hours wor
 The calculation is on their Taxable income, which is income after the CoachConnect fee (13.5% fee after $1,000).
  See [Resident tax rates 2020-21](https://www.ato.gov.au/rates/individual-income-tax-rates/) for the rates to apply to taxable income. 
 
-If a coach has a taxable income less then the $18,200, then the team would like an email to go to `sales@coachconnect.com`.
+If a coach has a yearly taxable income less then the $18,200, then the team would like an email to go to `sales@coachconnect.com`.
 
 Notes:
 
