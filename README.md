@@ -40,14 +40,7 @@ You can find the questions in `Questions.md`.
 
 Create and push the code folder up in the candidates name
 ```bash
-export CANDIDATE_NAME=laravel-chriswyh GIT_URL=git@kintell-git:kintell_tech/laravel-chriswyh.git; \
-cp -r code ../${CANDIDATE_NAME} && \
-cd ../${CANDIDATE_NAME} && \
-git init && \
-git add . && \
-git commit -m 'Initial commit' && \
-git remote add origin ${GIT_URL} && \
-git push -u origin master
+
 ```
 
 Book in a time with the candidate and give them access at an agreed upon time. Any commits after the 2 hour mark should 

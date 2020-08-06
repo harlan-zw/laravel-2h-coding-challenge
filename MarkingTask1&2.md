@@ -10,7 +10,7 @@ __Task 1 - Objective (10 points)__
 | (d) Remove .env from git, add .env.example | .5 | 0 |
 | (e) Update readme with setup instructions / background info | .5 | 0 |
 | (f) Validates input using laravel rules | .5 | 0 |
-| (g) Update .gitignore for missing config | .25 | 0 |
+| (g) Update .gitignore for missing config (.idea, .env, etc) | .25 | 0 |
 | (h) Submit a PR when they are finished | .25 | 0 |
 | (i) Add composer.lock to git | .25 | 0 |
 | (j) Add phpunit.xml.dist | .25 | 0 |
@@ -27,20 +27,23 @@ Candidate will lose points for the following (explicitly mentioned NOT to do):
 
 | item | marks | mark |
 | ---- | ----: | ----: |
-| Broke the `/calculate` endpoint (tests fail) | -2 | 0 |
+| (s) Broke the `/calculate` endpoint (tests fail) | -1 | 0 |
 
 Notes:
 
 - add notes here
 
+_Task 1 - Objective Total_: **X/10** 
+
 __Task 1 - Subjective (5 points)__
 
-Candidate can earn up to 4 points, these marks are subjective based on some of the things
-the dev did that wasn't asked for. This gives them a chance to show off any capabilities.
+These marks are subjective based on some of the things the dev did that wasn't asked for. This gives them a chance to 
+show off any capabilities.
 
 - Added a dev environment (docker, homestead, etc)
-- Added any type of CI
-- Added any phpcs tools
+- .editorconfig (1 point)
+- Added any type of CI 
+- Added any phpcs tools (1 point)
 - Any ide-helper additions
 - How well the documentation is
 - Anything above & beyond of what was asked for
@@ -53,15 +56,15 @@ Notes:
 
 - add notes here
 
-_Task 1 Total_: **X/15** 
+_Task 1 - Subjective Total_: **X/5** 
 
 __Task 2 - Objective (10 points)__
 
 | item | max marks | mark |
 | ---- | ----: | ----: |
-| (a) Does it work, given the two examples as input? | 2 | 2 |
-| (b) Does it work for any input? | 2 | 1 |
-| (c) Code quality | 2 | 1 |
+| (a) Does it work, given the two examples as input? | 2 | 0 |
+| (b) Does it work for any input? | 2 | 0 |
+| (c) Code quality | 2 | 0 |
 | (d) % of test coverage (min 80%) | 2 | 0 |
 | (e) Sends email if annual rate is less then $18,200 | 2 | 0 |
 

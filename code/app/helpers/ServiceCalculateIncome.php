@@ -7,7 +7,9 @@ final class ServiceCalculateIncome {
         // tr is total rate
         $tr = $h * $r;
 
-        if ($tr > 1000) { $tr -= (($tr - 1000) / 100 *config('Myconfig.Coach_Conenct.FeeSetting')); }
+        $weekly = $tr;
+
+        if ($weekly > 1000) { $weekly -= (($weekly - 1000) / 100 *config('Myconfig.Coach_Conenct.FeeSetting')); }
 
         // f is fortnightly
         $f = $tr * 2;
@@ -26,10 +28,10 @@ final class ServiceCalculateIncome {
         if ($y > 1000) { $y -= (($y - 1000) / 100 *config('Myconfig.Coach_Conenct.FeeSetting')); }
 
         return [
-            'Weekly' => $tr,
-            'Fortnightly' => $f,
-            'Monthly' => $m,
-            'Yearly' => $y,
+            'Week' => $tr,
+            'Fortnight' => $f,
+            'Month' => $m,
+            'Year' => $y,
         ];
     }
 }
