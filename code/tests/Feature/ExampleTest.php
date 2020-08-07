@@ -19,7 +19,7 @@ class ExampleTest extends TestCase
         ]);
 
         $response->assertJson([
-            'Week' => 3000,
+            'Week' => 2730,
             'Fortnight' => 5325,
             'Month' => 10515,
             'Year' => 135075,
@@ -39,7 +39,7 @@ class ExampleTest extends TestCase
         ]);
 
         $response->assertJson([
-            'Week' => 6000,
+            'Week' => 5325,
             'Fortnight' => 10515,
             'Month' => 20895,
             'Year' => 270015,

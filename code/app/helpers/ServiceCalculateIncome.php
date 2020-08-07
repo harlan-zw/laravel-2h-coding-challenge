@@ -28,7 +28,7 @@ final class ServiceCalculateIncome {
         if ($y > 1000) { $y -= (($y - 1000) / 100 *config('Myconfig.Coach_Conenct.FeeSetting')); }
 
         return [
-            'Week' => $tr,
+            'Week' => $weekly,
             'Fortnight' => $f,
             'Month' => $m,
             'Year' => $y,

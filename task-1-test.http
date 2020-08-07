@@ -1,0 +1,9 @@
+POST http://127.0.0.1:8000/calculate?hourly_rate=300&hours_worked_per_week=10
+
+> {%
+client.test("Total Tax is correct", function() {
+  client.assert(response.body.Yearly === 135075, "Bad total tax value");
+});
+%}
+
+###

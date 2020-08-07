@@ -1,0 +1,41 @@
+POST http://127.0.0.1:8000/tax?hourly_rate=300&hours_worked_per_week=10
+Content-Type: application/json
+
+{ "hourly_rate":  300, "hours_worked_per_week":  10 }
+
+> {%
+client.test("Total Tax is correct", function() {
+  client.assert(response.body.totalTax === 40176, "Bad total tax value");
+});
+%}
+
+###
+
+POST http://127.0.0.1:8000/tax?hourly_rate=150&hours_worked_per_week=40
+
+> {%
+client.test("Total Tax is correct", function() {
+  client.assert(response.body.totalTax === 100003, "Bad total tax value");
+});
+%}
+
+###
+
+POST http://127.0.0.1:8000/tax?hourly_rate=500&hours_worked_per_week=50
+
+> {%
+client.test("Total Tax is correct", function() {
+  client.assert(response.body.TotalTax === 501675, "Bad total tax value");
+});
+%}
+
+
+###
+
+POST http://127.0.0.1:8000/tax?hourly_rate=5&hours_worked_per_week=20
+
+> {%
+client.test("Total Tax is correct", function() {
+  client.assert(response.body.TotalTax === 100003, "Bad total tax value");
+});
+%}
